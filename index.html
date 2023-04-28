@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Rubik:wght@300&display=swap" rel="stylesheet">
+  <title>Encriptador</title>
+</head>
+<body>
+  <div class="general-grid" name="general">
+    <div class="message" name="divInput">
+      <img class="logo" src="img/Logo.png" alt="alura.png">
+      <br>
+      
+      <textarea id="Encriptar" type="text" autofocus placeholder="Ingrese el texto aquí" class="insert-text" required></textarea>
+      
+      <div class="buttons">
+        <button type="button" onclick="encrypt()" class="encrypt button-style">Encriptar</button>
+        <button type="button" onclick="desencrypt()" class="desencrypt button-style">Desencriptar</button>
+      </div>
+    </div>
+
+    <div class="show-message">
+      <p id="show">
+        Acá se mostrará el texto que se va a desencriptar o encriptar
+      </p>
+      <button onclick="copy()" class="copy button-style" type="button">Copy</button>
+    </div>
+  </div>
+  <script src="functions.js"></script>
+</body>
+</html>
